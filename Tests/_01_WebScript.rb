@@ -1,14 +1,13 @@
 require 'selenium-webdriver'
 
-
 base_url = 'https://fireflinkcloudtest.fireflink.com/backend/fireflinkcloud/wd/hub'
 params = {
   accessKey: '9c9f28ff-f15e-4539-8b92-1df2faaca0f5',
   licenseId: 'LIC3996',
-  projectName: 'App testing'
+  projectName: 'Time zone'
 }
-device_farm_hub_url = 'https://fireflinkcloudtest.fireflink.com/backend/fireflinkcloud/wd/hub?accessKey=9c9f28ff-f15e-4539-8b92-1df2faaca0f5&licenseId=LIC3996&projectName=App+testing/'
-options = Selenium::WebDriver::Edge::Options.new
+device_farm_hub_url = 'https://fireflinkcloudtest.fireflink.com/backend/fireflinkcloud/wd/hub?accessKey=9c9f28ff-f15e-4539-8b92-1df2faaca0f5&licenseId=LIC3996&projectName=Time+zone/'
+options = Selenium::WebDriver::Chrome::Options.new
 options.add_option('platformName', 'Windows 11')
 options.add_option('browserVersion', '134')
 driver = Selenium::WebDriver.for(:remote, url: device_farm_hub_url, capabilities: options)
