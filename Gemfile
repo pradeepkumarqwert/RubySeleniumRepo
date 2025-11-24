@@ -2,6 +2,6 @@
 
 source "https://rubygems.org"
 
-gem 'selenium-webdriver'
+gem "selenium-webdriver", "~> 4.19"
 gem 'rspec'
 # gem "rails"
